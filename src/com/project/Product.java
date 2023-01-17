@@ -4,11 +4,14 @@ public class Product {
     private int price;
     private String name;
     private Manufacturer manufacturer;
+    private static int total = 0;
+    private static int productNumber = 0;
 
     public Product() {  }
 
     public Product(String name, int price, Manufacturer manufacturer) {
         this.price = price;
+        total += price;
         this.name = name;
         this.manufacturer = manufacturer;
     }
@@ -18,7 +21,20 @@ public class Product {
     }
 
     public void setPrice(int price) {
+        total = total - this.price + price;
         this.price = price;
+    }
+
+    public static int getProductNumber() {
+        return productNumber;
+    }
+
+    public static int getAverage() {
+        return total/productNumber;
+    }
+
+    public static int getTotal() {
+        return total;
     }
 
     public String getName() {

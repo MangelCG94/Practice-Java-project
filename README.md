@@ -9,12 +9,13 @@ A project to review things as I go. The objective is to create the project as fo
 		- With parameters
 	- Getters and setters
 	- toString
-- Create a com.project.Main class
+- Create a Main class
 	- Create 5 Items
 	- Create an array with products
 	- "Statistics"
 		- Calculate the total sum
 		- Calculate the average price
+- Create a Manufacturer class
 
 ## Creating a basic 
 
