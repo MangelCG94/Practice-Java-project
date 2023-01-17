@@ -24,7 +24,7 @@ A class with encapsulated attributes:
 public class Item {
 	private String name;
 	private int price;
-    private Manufacturer manufacturer;
+	private Manufacturer manufacturer;
 }
 ```
 
