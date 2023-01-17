@@ -14,6 +14,7 @@ public class Product {
         total += price;
         this.name = name;
         this.manufacturer = manufacturer;
+        productNumber++;
     }
 
     public int getPrice() {
