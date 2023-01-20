@@ -31,7 +31,7 @@ public class Product {
     }
 
     public static int getAverage() {
-        return total/productNumber;
+        return productNumber == 0? 1 : total/productNumber;
     }
 
     public static int getTotal() {
